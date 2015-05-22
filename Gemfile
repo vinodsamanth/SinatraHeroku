@@ -6,6 +6,10 @@ gem "slim"
 
 gem "sass"
 
+gem "data_mapper"
+
+gem "dm-sqlite-adapter"
+
 gem "dm-core"
 
 gem "dm-migrations"
