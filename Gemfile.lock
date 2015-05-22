@@ -49,6 +49,7 @@ DEPENDENCIES
   dm-migrations
   dm-postgres-adapter
   dm-sqlite-adapter
+  rack
   sass
   sinatra
   slim
