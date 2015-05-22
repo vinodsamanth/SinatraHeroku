@@ -20,8 +20,12 @@ end
 DataMapper.finalize
 
 get '/songs' do
-  @songs = StudentData.all
-  slim :songs
+  if session[:admin]
+    @songs = StudentData.all
+    slim :songs
+  else
+    slim :ask_login
+  end
 end
 
 get '/songs/new' do

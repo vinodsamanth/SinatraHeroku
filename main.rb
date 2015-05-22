@@ -20,7 +20,11 @@ end
 get('/styles.css'){ scss :styles }
 
 get '/' do
-  slim :login
+  if session[:admin]
+    slim :home
+  else
+    slim :login
+  end
 end
 
 get '/about' do
@@ -51,7 +55,7 @@ end
 
 get '/logout' do
   session.clear
-  redirect to('/login')
+  redirect to('/')
 end
 
 get '/set/:name' do
