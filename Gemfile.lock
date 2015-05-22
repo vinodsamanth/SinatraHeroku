@@ -23,6 +23,7 @@ GEM
     do_sqlite3 (0.10.16-x86-mingw32)
       data_objects (= 0.10.16)
     eventmachine (1.0.7)
+    pg (0.18.2-x86-mingw32)
     rack (1.6.1)
     rack-protection (1.5.3)
       rack
@@ -49,6 +50,7 @@ DEPENDENCIES
   dm-migrations
   dm-postgres-adapter
   dm-sqlite-adapter
+  pg
   sass
   sinatra
   slim
