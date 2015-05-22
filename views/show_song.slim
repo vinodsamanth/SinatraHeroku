@@ -1,0 +1,10 @@
+h1= @song.id
+p First Name: #{@song.sfname}
+p Last Name: #{@song.slname}
+p Major:  #{@song.major}
+p GPA: #{@song.gpa}
+p <a href="/songs">back to Student index</a>
+p <a href="/songs/#{@song.id}/edit">edit Student Info</a>
+form action="/songs/#{@song.id}" method="POST"
+  input type="hidden" name="_method" value="DELETE"
+  input type="submit" value="delete this Student Record"
