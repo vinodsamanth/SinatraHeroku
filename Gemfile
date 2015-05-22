@@ -2,6 +2,8 @@ source :rubygems
 
 gem "sinatra"
 
+gem "rack"
+
 gem "slim"
 
 gem "sass"
